@@ -19,7 +19,7 @@
   --lime:    #4CAF68;
   --gold:    #9A6E28;
   --gold-lt: #C8A45A;
-  --mono:    'DM Mono', monospace;
+  --mono:    'Space Mono', monospace;
   --radius:  12px;
   --nav-h:   64px;
   --ease-out-expo: cubic-bezier(0.19, 1, 0.22, 1);
@@ -33,7 +33,7 @@ html {
 body {
   background: var(--white);
   color: var(--ink);
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -95,7 +95,7 @@ nav.scrolled {
 }
 
 .nav-logo {
-  font-family: 'Fraunces', serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 700; font-size: 20px; color: var(--ink);
   display: flex; align-items: center; gap: 10px;
   letter-spacing: -0.3px;
@@ -113,7 +113,7 @@ nav.scrolled {
 }
 .nav-cta {
   background: var(--ink); color: var(--white);
-  font-family: 'DM Sans', sans-serif; font-size: 13px; font-weight: 500;
+  font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 500;
   padding: 9px 20px; border-radius: 8px;
   text-decoration: none; cursor: pointer;
   transition: background 0.2s, transform 0.2s;
@@ -174,7 +174,7 @@ nav.scrolled {
   letter-spacing: 2px; text-transform: uppercase;
 }
 .hero-title {
-  font-family: 'Fraunces', serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 900;
   font-size: clamp(44px, 6vw, 80px);
   line-height: 1.0; letter-spacing: -2px;
@@ -194,7 +194,7 @@ nav.scrolled {
 }
 .btn-primary {
   background: var(--ink); color: var(--white);
-  font-family: 'DM Sans', sans-serif; font-size: 14px; font-weight: 500;
+  font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 500;
   padding: 14px 28px; border-radius: 9px;
   text-decoration: none; cursor: pointer;
   transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
@@ -294,7 +294,7 @@ nav.scrolled {
   display: grid; grid-template-columns: 1fr 1fr; gap: 100px; align-items: start;
 }
 .problem-text h2 {
-  font-family: 'Fraunces', serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: clamp(30px, 3.5vw, 48px); font-weight: 700;
   letter-spacing: -1px; line-height: 1.1; margin-bottom: 20px;
 }
@@ -359,7 +359,7 @@ nav.scrolled {
   margin-bottom: 40px;
 }
 .features-top h2 {
-  font-family: 'Fraunces', serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: clamp(26px, 3vw, 40px); font-weight: 700;
   letter-spacing: -1px; line-height: 1.1;
 }
@@ -409,7 +409,7 @@ nav.scrolled {
 }
 .feat-icon-wrap svg { width: 16px; height: 16px; }
 .feat-title {
-  font-family: 'Fraunces', serif; font-weight: 700;
+  font-family: 'Montserrat', sans-serif; font-weight: 700;
   font-size: 16px; letter-spacing: -0.3px; margin-bottom: 6px;
 }
 .feat-body { font-size: 12.5px; color: var(--muted); line-height: 1.65; font-weight: 300; }
@@ -447,7 +447,7 @@ nav.scrolled {
 .workflow-inner { max-width: 1200px; margin: 0 auto; }
 .workflow-head { max-width: 560px; margin-bottom: 80px; }
 .workflow-head h2 {
-  font-family: 'Fraunces', serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: clamp(28px, 3.5vw, 44px); font-weight: 700;
   letter-spacing: -1px; line-height: 1.1; margin-bottom: 14px;
 }
@@ -491,7 +491,7 @@ nav.scrolled {
 }
 
 .wf-step-num {
-  font-family: 'Fraunces', serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 900;
   font-size: 80px;
   line-height: 1;
@@ -501,7 +501,7 @@ nav.scrolled {
   display: block;
 }
 .wf-step h4 {
-  font-family: 'Fraunces', serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 22px;
   letter-spacing: -0.4px;
@@ -547,7 +547,7 @@ nav.scrolled {
 }
 .mobile-text { color: var(--white); }
 .mobile-text h2 {
-  font-family: 'Fraunces', serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: clamp(28px, 3.5vw, 44px); font-weight: 700;
   letter-spacing: -1px; line-height: 1.1; margin-bottom: 20px;
 }
@@ -613,7 +613,7 @@ nav.scrolled {
 .integ-inner { max-width: 1200px; margin: 0 auto; }
 .integ-head { max-width: 560px; margin-bottom: 56px; }
 .integ-head h2 {
-  font-family: 'Fraunces', serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: clamp(26px, 3vw, 40px); font-weight: 700;
   letter-spacing: -0.8px; line-height: 1.15; margin-bottom: 12px;
 }
@@ -647,7 +647,7 @@ nav.scrolled {
 .pricing-inner { max-width: 1200px; margin: 0 auto; }
 .pricing-head { margin-bottom: 56px; }
 .pricing-head h2 {
-  font-family: 'Fraunces', serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: clamp(28px, 3.5vw, 44px); font-weight: 700;
   letter-spacing: -1px; line-height: 1.1; margin-bottom: 14px;
 }
@@ -720,7 +720,7 @@ nav.scrolled {
 
 .plan-price-wrap { margin-bottom: 6px; display: flex; align-items: baseline; gap: 4px; }
 .plan-amount {
-  font-family: 'Fraunces', serif; font-weight: 700; font-size: 38px;
+  font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 38px;
   letter-spacing: -1.5px; line-height: 1; color: var(--ink);
 }
 .plan-card.featured .plan-amount { color: var(--white); }
@@ -754,7 +754,7 @@ nav.scrolled {
 .plan-cta {
   display: block; width: 100%; text-align: center;
   padding: 13px 20px; border-radius: 8px;
-  font-family: 'DM Sans', sans-serif; font-weight: 500; font-size: 13px;
+  font-family: 'Inter', sans-serif; font-weight: 500; font-size: 13px;
   text-decoration: none; cursor: pointer; border: none;
   transition: all 0.2s;
 }
@@ -837,7 +837,7 @@ nav.scrolled {
 }
 .preview-inner .section-label { color: var(--lime); }
 .preview-inner h2 {
-  font-family: 'Fraunces', serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: clamp(28px, 3.5vw, 44px); font-weight: 700;
   color: var(--white); letter-spacing: -1px; line-height: 1.1; margin-bottom: 16px;
 }
@@ -873,7 +873,7 @@ nav.scrolled {
   display: grid; grid-template-columns: 1fr 1fr; gap: 100px; align-items: start;
 }
 .contact-left h2 {
-  font-family: 'Fraunces', serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: clamp(28px, 3.5vw, 44px); font-weight: 700;
   letter-spacing: -1px; line-height: 1.1; margin-bottom: 16px;
 }
@@ -887,12 +887,12 @@ nav.scrolled {
 .author-initials {
   width: 56px; height: 56px; border-radius: 50%;
   background: var(--green); color: var(--white);
-  font-family: 'Fraunces', serif; font-size: 22px; font-weight: 700;
+  font-family: 'Montserrat', sans-serif; font-size: 22px; font-weight: 700;
   display: flex; align-items: center; justify-content: center;
   margin-bottom: 18px;
 }
 .author-name {
-  font-family: 'Fraunces', serif; font-weight: 700; font-size: 20px;
+  font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 20px;
   letter-spacing: -0.3px; margin-bottom: 4px;
 }
 .author-role {
@@ -931,7 +931,7 @@ footer {
   display: flex; align-items: center; justify-content: space-between;
 }
 .footer-logo {
-  font-family: 'Fraunces', serif; font-weight: 700; font-size: 17px; color: var(--ink);
+  font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 17px; color: var(--ink);
 }
 .footer-meta {
   font-family: var(--mono); font-size: 10px; color: var(--muted); letter-spacing: 0.5px;
