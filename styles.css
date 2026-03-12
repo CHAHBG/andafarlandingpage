@@ -467,16 +467,18 @@ nav.scrolled {
   padding: 80px 0;
   border-top: 1px solid var(--border);
   opacity: 0;
-  transform: translateX(-60px);
-  transition: opacity 0.7s ease, transform 0.7s ease;
+  transform: translateX(-80px);
+  transition: opacity 1s ease, transform 1s cubic-bezier(0.22, 1, 0.36, 1);
 }
 .wf-step:last-child { border-bottom: 1px solid var(--border); }
 .wf-step.in-view { opacity: 1; transform: translateX(0); }
 
-/* Even steps flip - image on left, text on right */
+/* Even steps flip - image on left, text on right — slide from right */
 .wf-step:nth-child(even) {
   flex-direction: row-reverse;
+  transform: translateX(80px);
 }
+.wf-step:nth-child(even).in-view { transform: translateX(0); }
 
 .wf-step-text {
   flex: 0 0 300px;

@@ -217,25 +217,24 @@
     });
   }, { threshold: 0.1 });
 
-  document.querySelectorAll('.reveal,.feat-card,.wf-step,.integ-card,.plan-card').forEach(function (el) {
+  document.querySelectorAll('.reveal,.feat-card,.integ-card,.plan-card').forEach(function (el) {
     revealIO.observe(el);
   });
 
-  /* ---------- WORKFLOW STAGGER ---------- */
-  var wfGrid = document.querySelector('.workflow-grid');
-  if (wfGrid) {
-    new IntersectionObserver(function (entries) {
-      entries.forEach(function (e) {
-        if (e.isIntersecting) {
-          e.target.querySelectorAll('.wf-step').forEach(function (el, i) {
-            setTimeout(function () {
-              el.classList.add('in-view');
-            }, i * 120);
-          });
-        }
-      });
-    }, { threshold: 0.2 }).observe(wfGrid);
-  }
+  /* ---------- WORKFLOW - per-step scroll trigger ---------- */
+  var wfStepIO = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (e.isIntersecting) {
+        e.target.classList.add('in-view');
+        wfStepIO.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.3, rootMargin: '0px 0px -80px 0px' });
+
+  document.querySelectorAll('.wf-step').forEach(function (el, i) {
+    el.dataset.stepIndex = i;
+    wfStepIO.observe(el);
+  });
 
   /* ---------- BILLING TOGGLE ---------- */
   var annual = false;
