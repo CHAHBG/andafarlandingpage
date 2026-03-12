@@ -12,9 +12,9 @@
   var W, H;
   var mouse = { x: -9999, y: -9999 };
   var scrollY = 0;
-  var NODE_COUNT = 35;
-  var CONNECT_DIST = 140;
-  var MOUSE_RADIUS = 120;
+  var NODE_COUNT = 22;
+  var CONNECT_DIST = 115;
+  var MOUSE_RADIUS = 100;
 
   /* color palette - visible on light (#FAFAF7) background */
   var LIME   = '#2E9E4F';
@@ -138,7 +138,7 @@
     var maxScroll = document.body.scrollHeight - window.innerHeight;
     var pct = maxScroll > 0 ? scrollY / maxScroll : 0;
     /* Smoothly ramp canvas opacity: full at top, slightly lower mid-page */
-    canvas.style.opacity = (0.55 + pct * 0.15).toFixed(3);
+    canvas.style.opacity = (0.4 + pct * 0.12).toFixed(3);
   }
 
   window.addEventListener('resize', function () { resize(); initNodes(); }, { passive: true });
