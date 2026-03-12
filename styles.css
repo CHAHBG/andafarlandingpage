@@ -1,5 +1,5 @@
-/* ==========================================================================
-   Andafar — Landing Page Styles
+﻿/* ==========================================================================
+   Andafar - Landing Page Styles
    ========================================================================== */
 
 /* ---------- RESET ---------- */
@@ -473,7 +473,7 @@ nav.scrolled {
 .wf-step:last-child { border-bottom: 1px solid var(--border); }
 .wf-step.in-view { opacity: 1; transform: translateX(0); }
 
-/* Even steps flip — image on left, text on right */
+/* Even steps flip - image on left, text on right */
 .wf-step:nth-child(even) {
   flex-direction: row-reverse;
 }
@@ -525,7 +525,7 @@ nav.scrolled {
 }
 .wf-step-images .wf-step-img { box-shadow: none; }
 
-/* Portrait/mobile screenshot (step 04) — centered in its flex slot */
+/* Portrait/mobile screenshot (step 04) - centered in its flex slot */
 .wf-step > .wf-step-img--portrait {
   flex: 0 0 auto;
   width: 260px;

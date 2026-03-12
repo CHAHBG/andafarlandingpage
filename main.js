@@ -1,5 +1,5 @@
-/* ==========================================================================
-   Andafar — Landing Page Scripts
+﻿/* ==========================================================================
+   Andafar - Landing Page Scripts
    ========================================================================== */
 /* ---------- GIS CANVAS ANIMATION ---------- */
 (function () {
@@ -16,7 +16,7 @@
   var CONNECT_DIST = 140;
   var MOUSE_RADIUS = 120;
 
-  /* color palette — visible on light (#FAFAF7) background */
+  /* color palette - visible on light (#FAFAF7) background */
   var LIME   = '#2E9E4F';
   var GREEN  = '#1B6B30';
   var BORDER = '#8CA68E';
@@ -45,7 +45,7 @@
   function draw(ts) {
     ctx.clearRect(0, 0, W, H);
 
-    /* Scroll drift — shift everything slightly */
+    /* Scroll drift - shift everything slightly */
     var drift = (scrollY % H) * 0.06;
 
     /* Update positions */
@@ -308,7 +308,7 @@
   /* ---- simple text translations  [selector, EN, FR] ---- */
   var T = [
     /* Nav */
-    ['.nav-tag', 'Now Open', 'Maintenant ouvert'],
+    ['.nav-tag', 'Now Open', 'Maintenant disponible'],
     /* Hero */
     ['.hero-label-txt', 'Collaborative GIS Platform', 'Plateforme SIG collaborative'],
     ['.hero-sub', 'The platform that connects office and field teams for GIS data correction at scale. Works for utilities, land surveys, infrastructure, environmental mapping, humanitarian ops \u2014 offline-first, real-time, native KoboToolbox integration.', 'La plateforme qui connecte \u00e9quipes bureau et terrain pour la correction de donn\u00e9es SIG \u00e0 grande \u00e9chelle. Con\u00e7ue pour les services publics, le cadastre, les infrastructures, la cartographie environnementale, l\u2019humanitaire \u2014 offline-first, temps r\u00e9el, int\u00e9gration native KoboToolbox.'],

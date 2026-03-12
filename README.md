@@ -1,6 +1,6 @@
-# Andafar Landing Page
+﻿# Andafar Landing Page
 
-Landing page for **Andafar** — a GIS field data collection platform for non-technical agents.
+Landing page for **Andafar** - a GIS field data collection platform for non-technical agents.
 
 ## Stack
 
@@ -21,7 +21,7 @@ logo.png            Andafar logo
 
 ## Local development
 
-Open `index.html` directly in a browser — no build step required.
+Open `index.html` directly in a browser - no build step required.
 
 ## Deploy
 
