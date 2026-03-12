@@ -574,3 +574,64 @@
   /* always apply on load so no stale HTML content survives */
   apply(window._lang);
 })();
+
+/* ---------- FLOATING CONTACT BUTTON ---------- */
+(function () {
+  'use strict';
+  var fab  = document.getElementById('fab-contact');
+  var btn  = document.getElementById('fab-btn');
+  var panel = document.getElementById('fab-panel');
+  if (!fab || !btn) return;
+
+  var isOpen = false;
+
+  function toggle() {
+    isOpen = !isOpen;
+    fab.classList.toggle('open', isOpen);
+    btn.setAttribute('aria-expanded', String(isOpen));
+    panel.setAttribute('aria-hidden', String(!isOpen));
+    if (isOpen) panel.focus();
+  }
+
+  btn.addEventListener('click', function (e) {
+    e.stopPropagation();
+    toggle();
+  });
+
+  document.addEventListener('click', function (e) {
+    if (isOpen && !fab.contains(e.target)) toggle();
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && isOpen) toggle();
+  });
+
+  /* FR/EN label swap */
+  var fabTranslations = {
+    '#fab-label':       ['Contactez-moi', 'Contact me'],
+    '#fab-panel-title': ['Nous contacter', 'Get in touch'],
+    '#fab-email-label': ['Email', 'Email'],
+    '#fab-wa-label':    ['WhatsApp', 'WhatsApp'],
+    '#fab-phone-label': ['T\u00e9l\u00e9phone', 'Phone'],
+    '#fab-li-label':    ['LinkedIn', 'LinkedIn'],
+  };
+
+  function applyFabLang(lang) {
+    var isFr = lang === 'fr';
+    Object.keys(fabTranslations).forEach(function (sel) {
+      var el = document.querySelector(sel);
+      if (el) el.textContent = isFr ? fabTranslations[sel][0] : fabTranslations[sel][1];
+    });
+  }
+
+  /* hook into existing lang toggle button */
+  var langBtn = document.getElementById('lang-toggle');
+  if (langBtn) {
+    langBtn.addEventListener('click', function () {
+      /* give the main IIFE time to flip window._lang first */
+      setTimeout(function () { applyFabLang(window._lang); }, 0);
+    });
+  }
+
+  applyFabLang(window._lang);
+})();
