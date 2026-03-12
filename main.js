@@ -310,7 +310,7 @@
     ['.nav-tag', 'Now Open', 'Maintenant disponible'],
     /* Hero */
     ['.hero-label-txt', 'Collaborative GIS Platform', 'Plateforme SIG collaborative'],
-    ['.hero-sub', 'The platform that connects office and field teams for GIS data correction at scale. Works for utilities, land surveys, infrastructure, environmental mapping, humanitarian ops \u2014 offline-first, real-time, native KoboToolbox integration.', 'La plateforme qui connecte \u00e9quipes bureau et terrain pour la correction de donn\u00e9es SIG \u00e0 grande \u00e9chelle. Con\u00e7ue pour les services publics, le cadastre, les infrastructures, la cartographie environnementale, l\u2019humanitaire \u2014 offline-first, temps r\u00e9el, int\u00e9gration native KoboToolbox.'],
+    ['.hero-sub', 'The platform that connects office and field teams for GIS data correction at scale. Works for utilities, land surveys, infrastructure, environmental mapping, humanitarian ops : offline-first, real-time, native KoboToolbox integration.', 'La plateforme qui connecte \u00e9quipes bureau et terrain pour la correction de donn\u00e9es SIG \u00e0 grande \u00e9chelle. Con\u00e7ue pour les services publics, le cadastre, les infrastructures, la cartographie environnementale, l\u2019humanitaire : offline-first, temps r\u00e9el, int\u00e9gration native KoboToolbox.'],
     ['.hero .btn-ghost', 'Explore Features', 'D\u00e9couvrir les fonctionnalit\u00e9s'],
     /* Problem */
     ['#problem .section-label', 'Why Andafar', 'Pourquoi Andafar'],
@@ -369,20 +369,20 @@
   /* ---- pain items (indexed) ---- */
   var painTexts = [
     ['Excel files shared over WhatsApp, conflicting versions, no traceability', 'Fichiers Excel partag\u00e9s sur WhatsApp, versions conflictuelles, aucune tra\u00e7abilit\u00e9'],
-    ['Field agents without connectivity \u2014 work impossible without a network', 'Agents terrain sans connectivit\u00e9 \u2014 travail impossible sans r\u00e9seau'],
+    ['Field agents without connectivity : work impossible without a network', 'Agents terrain sans connectivit\u00e9 : travail impossible sans r\u00e9seau'],
     ['No link between the map feature and its correction form', 'Aucun lien entre l\u2019entit\u00e9 cartographique et son formulaire de correction'],
-    ['Manual supervisor validation \u2014 no diff, no history, no formal rejections', 'Validation superviseur manuelle \u2014 pas de diff, pas d\u2019historique, pas de rejets formels']
+    ['Manual supervisor validation : no diff, no history, no formal rejections', 'Validation superviseur manuelle : pas de diff, pas d\u2019historique, pas de rejets formels']
   ];
 
   var consHeading = ['Without Andafar', 'Sans Andafar'];
   var proHeading = ['With Andafar', 'Avec Andafar'];
   var proTexts = [
-    ['Instant attribute join after corrections \u2014 no need to re-join through QGIS or ArcGIS manually', 'Jointure attributaire instantan\u00e9e apr\u00e8s correction \u2014 plus besoin de refaire la jointure manuellement dans QGIS ou ArcGIS'],
+    ['Instant attribute join after corrections : no need to re-join through QGIS or ArcGIS manually', 'Jointure attributaire instantan\u00e9e apr\u00e8s correction : plus besoin de refaire la jointure manuellement dans QGIS ou ArcGIS'],
     ['Offline-first: agents collect and correct data without any network, sync when back online', 'Offline-first : les agents collectent et corrigent sans r\u00e9seau, synchronisation au retour en ligne'],
-    ['Each map feature is directly linked to its correction form \u2014 one tap to open, fill, and submit', 'Chaque entit\u00e9 cartographique est directement li\u00e9e \u00e0 son formulaire de correction \u2014 un tap pour ouvrir, remplir et soumettre'],
+    ['Each map feature is directly linked to its correction form : one tap to open, fill, and submit', 'Chaque entit\u00e9 cartographique est directement li\u00e9e \u00e0 son formulaire de correction : un tap pour ouvrir, remplir et soumettre'],
     ['Built-in before/after diff, full history, and formal approval or rejection workflow', 'Diff avant/apr\u00e8s int\u00e9gr\u00e9, historique complet et workflow formel d\u2019approbation ou de rejet'],
-    ['Live validation or rejection \u2014 corrections are addressed on the spot, eliminating costly back-and-forth trips to the field', 'Validation ou rejet en direct \u2014 les corrections sont trait\u00e9es sur place, \u00e9liminant les allers-retours co\u00fbteux sur le terrain'],
-    ['Daily corrections monitored per agent \u2014 supervisors see who submitted what, who reviewed it, and track team progress in real time', 'Corrections journali\u00e8res suivies par agent \u2014 les superviseurs voient qui a soumis quoi, qui l\u2019a examin\u00e9 et suivent l\u2019avancement de l\u2019\u00e9quipe en temps r\u00e9el']
+    ['Live validation or rejection : corrections are addressed on the spot, eliminating costly back-and-forth trips to the field', 'Validation ou rejet en direct : les corrections sont trait\u00e9es sur place, \u00e9liminant les allers-retours co\u00fbteux sur le terrain'],
+    ['Daily corrections monitored per agent : supervisors see who submitted what, who reviewed it, and track team progress in real time', 'Corrections journali\u00e8res suivies par agent : les superviseurs voient qui a soumis quoi, qui l\u2019a examin\u00e9 et suivent l\u2019avancement de l\u2019\u00e9quipe en temps r\u00e9el']
   ];
 
   var probLabels = [
@@ -542,8 +542,8 @@
     /* page meta */
     document.documentElement.lang = lang;
     document.title = lang === 'fr'
-      ? 'Andafar \u2014 Corrigez vos donn\u00e9es SIG terrain ensemble'
-      : 'Andafar \u2014 Correct Field GIS Data Together';
+      ? 'Andafar | Corrigez vos donn\u00e9es SIG terrain ensemble'
+      : 'Andafar | Correct Field GIS Data Together';
 
     var metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
