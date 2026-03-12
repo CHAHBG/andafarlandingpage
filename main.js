@@ -307,7 +307,7 @@
   /* ---- simple text translations  [selector, EN, FR] ---- */
   var T = [
     /* Nav */
-    ['.nav-tag', 'Now Open', 'Maintenant disponible'],
+    ['.nav-tag', 'Get Started', 'Commencer maintenant'],
     /* Hero */
     ['.hero-label-txt', 'Collaborative GIS Platform', 'Plateforme SIG collaborative'],
     ['.hero-sub', 'The platform that connects office and field teams for GIS data correction at scale. Works for utilities, land surveys, infrastructure, environmental mapping, humanitarian ops : offline-first, real-time, native KoboToolbox integration.', 'La plateforme qui connecte \u00e9quipes bureau et terrain pour la correction de donn\u00e9es SIG \u00e0 grande \u00e9chelle. Con\u00e7ue pour les services publics, le cadastre, les infrastructures, la cartographie environnementale, l\u2019humanitaire : offline-first, temps r\u00e9el, int\u00e9gration native KoboToolbox.'],
@@ -346,7 +346,7 @@
     ['.promo-ribbon', '1 month free!', '1 mois gratuit !'],
     /* Live Preview */
     ['#live-preview .section-label', 'Live Preview', 'Aper\u00e7u en direct'],
-    ['#live-preview > .preview-inner > .reveal > p', 'See GIS data corrections directly in the Andafar interface \u2014 office and field teams in sync.', 'Visualisez les corrections de donn\u00e9es SIG directement dans l\u2019interface Andafar \u2014 \u00e9quipes bureau et terrain en synchronisation.'],
+    ['#live-preview > .preview-inner > .reveal > p', 'See GIS data corrections directly in the Andafar interface  office and field teams in sync.', 'Visualisez les corrections de donn\u00e9es SIG directement dans l\u2019interface Andafar  \u00e9quipes bureau et terrain en synchronisation.'],
     /* Contact */
     ['#contact .section-label', 'Contact', 'Contact'],
     ['#contact h2', 'Ready to deploy on your project?', 'Pr\u00eat \u00e0 d\u00e9ployer sur votre projet ?'],
