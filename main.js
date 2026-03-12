@@ -374,6 +374,7 @@
     ['Manual supervisor validation \u2014 no diff, no history, no formal rejections', 'Validation superviseur manuelle \u2014 pas de diff, pas d\u2019historique, pas de rejets formels']
   ];
 
+  var consHeading = ['Without Andafar', 'Sans Andafar'];
   var proHeading = ['With Andafar', 'Avec Andafar'];
   var proTexts = [
     ['Instant attribute join after corrections \u2014 no need to re-join through QGIS or ArcGIS manually', 'Jointure attributaire instantan\u00e9e apr\u00e8s correction \u2014 plus besoin de refaire la jointure manuellement dans QGIS ou ArcGIS'],
@@ -481,8 +482,10 @@
       if (painTexts[j]) el.textContent = painTexts[j][i];
     });
 
-    /* pro heading & items */
-    var proH = document.querySelector('.pro-heading');
+    /* compare headings & items */
+    var consH = document.querySelector('.cons-heading');
+    if (consH) consH.textContent = consHeading[i];
+    var proH = document.querySelector('.pros-heading');
     if (proH) proH.textContent = proHeading[i];
     document.querySelectorAll('.pro-text').forEach(function (el, j) {
       if (proTexts[j]) el.textContent = proTexts[j][i];
