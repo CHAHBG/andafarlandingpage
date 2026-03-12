@@ -343,11 +343,6 @@
     ['.plan-card:nth-child(3) .plan-badge.featured-b', 'Popular', 'Populaire'],
     ['.plan-card:nth-child(4) .plan-badge.enterprise-b', 'Enterprise', 'Entreprise'],
     ['.plan-card:nth-child(4) .plan-name', 'Enterprise', 'Entreprise'],
-    /* Plan CTAs */
-    ['.plan-card:nth-child(1) .plan-cta', 'Get started', 'Commencer'],
-    ['.plan-card:nth-child(2) .plan-cta', 'Get started', 'Commencer'],
-    ['.plan-card:nth-child(3) .plan-cta', 'Start now', 'Commencer'],
-    ['.plan-card:nth-child(4) .plan-cta', 'Get in touch', 'Contactez-nous'],
     ['.promo-ribbon', '1 month free!', '1 mois gratuit !'],
     /* Live Preview */
     ['#live-preview .section-label', 'Live Preview', 'Aper\u00e7u en direct'],
