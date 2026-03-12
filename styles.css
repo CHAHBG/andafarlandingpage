@@ -291,15 +291,21 @@ nav.scrolled {
 }
 .problem-inner {
   max-width: 1200px; margin: 0 auto;
-  display: grid; grid-template-columns: 1fr 1fr; gap: 100px; align-items: start;
+  display: flex; flex-direction: column; gap: 48px;
 }
+.problem-header { order: 1; }
+.problem-screens { order: 2; }
+.problem-compare { order: 3; display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
 .problem-text h2 {
   font-family: 'Montserrat', sans-serif;
   font-size: clamp(30px, 3.5vw, 48px); font-weight: 700;
   letter-spacing: -1px; line-height: 1.1; margin-bottom: 20px;
 }
 .problem-text p { font-size: 15px; color: var(--muted); line-height: 1.8; font-weight: 300; }
-.pain-list { list-style: none; margin-top: 32px; display: flex; flex-direction: column; gap: 0; }
+.compare-heading { font-size: 12px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; padding-bottom: 14px; border-bottom: 2px solid var(--border); margin-bottom: 4px; }
+.cons-heading { color: #DC2626; border-color: #FCA5A5; }
+.pros-heading { color: var(--green); border-color: #86EFAC; }
+.pain-list { list-style: none; margin-top: 0; display: flex; flex-direction: column; gap: 0; }
 .pain-item {
   display: flex; align-items: flex-start; gap: 16px;
   padding: 18px 0; border-bottom: 1px solid var(--border);
@@ -314,8 +320,7 @@ nav.scrolled {
 .pain-marker svg { width: 12px; height: 12px; }
 .pain-text { font-size: 14px; color: var(--muted); font-weight: 300; line-height: 1.6; }
 
-.pro-heading { margin-top: 36px; font-size: 18px; font-weight: 600; color: var(--green); letter-spacing: .02em; }
-.pro-list { list-style: none; margin-top: 16px; display: flex; flex-direction: column; gap: 0; }
+.pro-list { list-style: none; margin-top: 0; display: flex; flex-direction: column; gap: 0; }
 .pro-item {
   display: flex; align-items: flex-start; gap: 16px;
   padding: 18px 0; border-bottom: 1px solid var(--border);
@@ -331,7 +336,7 @@ nav.scrolled {
 .pro-text { font-size: 14px; color: var(--ink); font-weight: 400; line-height: 1.6; }
 
 .problem-screens {
-  display: grid; grid-template-columns: 1fr 1fr; gap: 12px;
+  display: grid; grid-template-columns: 1fr 1fr; gap: 12px; width: 100%;
 }
 .prob-img {
   border-radius: var(--radius); overflow: hidden;
