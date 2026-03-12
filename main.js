@@ -367,7 +367,9 @@
     ['#pricing h2', 'Transparent, scalable,<br/>built for the field', 'Transparent, \u00e9volutif,<br/>con\u00e7u pour le terrain'],
     ['#live-preview h2', 'Real-time corrections<br/>on Andafar Web', 'Corrections en temps r\u00e9el<br/>sur Andafar Web'],
     ['.plan-amount.ent', 'Custom<br/>quote', 'Sur<br/>devis'],
-    ['.pricing-note', '<b>Open registration</b>: self-serve setup \u2014 create your account and projects directly on the platform.<br/>All plans include offline mode and native KoboToolbox sync. Email support included.<br/><b>Early access:</b> the first 30 teams to sign up can reach us via WhatsApp or email for direct onboarding.', '<b>Inscription ouverte</b> : configuration en libre-service \u2014 cr\u00e9ez votre compte et vos projets directement sur la plateforme.<br/>Tous les forfaits incluent le mode hors-ligne et la synchronisation native KoboToolbox. Support email inclus.<br/><b>Acc\u00e8s anticip\u00e9 :</b> les 30 premi\u00e8res \u00e9quipes inscrites peuvent nous contacter via WhatsApp ou email pour un onboarding direct.']
+    ['.pricing-note', '<b>Open registration</b>: self-serve setup - create your account and projects directly on the platform.<br/>All plans include offline mode and native KoboToolbox sync. Email support included.', '<b>Inscription ouverte</b> : configuration en libre-service - cr\u00e9ez votre compte et vos projets directement sur la plateforme.<br/>Tous les forfaits incluent le mode hors-ligne et la synchronisation native KoboToolbox. Support email inclus.'],
+    ['.ea-badge', 'Early Access', 'Acc\u00e8s anticip\u00e9'],
+    ['.ea-text', 'The first <strong>30 teams</strong> to sign up can reach us via WhatsApp or email for direct onboarding.', 'Les <strong>30 premi\u00e8res \u00e9quipes</strong> inscrites peuvent nous contacter via WhatsApp ou email pour un onboarding direct.']
   ];
 
   /* ---- pain items (indexed) ---- */

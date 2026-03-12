@@ -778,6 +778,39 @@ nav.scrolled {
 }
 .pricing-note b { color: var(--green); font-weight: 400; }
 
+/* ---------- EARLY ACCESS BANNER ---------- */
+.early-access-banner {
+  display: flex; align-items: center; gap: 18px;
+  margin-top: 36px; margin-bottom: 12px;
+  padding: 18px 24px;
+  background: var(--ink); color: var(--white);
+  border-radius: var(--radius);
+  border: 2px solid var(--lime);
+  animation: ea-pulse-border 2s ease-in-out infinite;
+}
+.ea-badge {
+  flex-shrink: 0;
+  background: var(--lime); color: var(--ink);
+  font-family: var(--mono); font-size: 10px; font-weight: 700;
+  letter-spacing: 1.5px; text-transform: uppercase;
+  padding: 5px 12px; border-radius: 20px;
+  animation: ea-blink 1.4s step-start infinite;
+}
+.ea-text {
+  font-size: 14px; font-weight: 400; line-height: 1.5;
+  color: rgba(255,255,255,0.9);
+  margin: 0;
+}
+.ea-text strong { color: var(--lime); font-weight: 700; }
+@keyframes ea-pulse-border {
+  0%, 100% { border-color: var(--lime); box-shadow: 0 0 0 0 rgba(76,175,104,0); }
+  50% { border-color: #6ee08a; box-shadow: 0 0 0 5px rgba(76,175,104,0.15); }
+}
+@keyframes ea-blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
 /* ---------- PROMO RIBBON ---------- */
 .promo-ribbon {
   background: linear-gradient(135deg, var(--gold) 0%, #C8922D 100%);
