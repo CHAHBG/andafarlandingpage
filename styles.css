@@ -773,12 +773,12 @@ nav.scrolled {
 .plan-cta.subtle:hover { border-color: var(--gold-lt); color: var(--gold-lt); }
 
 .pricing-note {
-  margin-top: 36px; padding: 20px 28px;
+  margin-top: 12px; padding: 18px 24px;
   background: var(--paper); border: 1px solid var(--border); border-radius: var(--radius);
-  font-family: var(--mono); font-size: 11px; color: var(--muted);
-  line-height: 1.7; letter-spacing: 0.3px;
+  font-family: 'Inter', sans-serif; font-size: 13px; color: var(--ink);
+  line-height: 1.75; opacity: 0.75;
 }
-.pricing-note b { color: var(--green); font-weight: 400; }
+.pricing-note b { color: var(--green); font-weight: 600; }
 
 /* ---------- EARLY ACCESS BANNER ---------- */
 .early-access-banner {

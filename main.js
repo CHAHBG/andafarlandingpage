@@ -576,6 +576,6 @@
     existingBtn.addEventListener('click', window.toggleLang);
   }
 
-  /* apply saved language on load */
-  if (window._lang === 'fr') apply('fr');
+  /* always apply on load so no stale HTML content survives */
+  apply(window._lang);
 })();
