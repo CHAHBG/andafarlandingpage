@@ -1,0 +1,15 @@
+# Python utility scripts (not part of the web app)
+blur_emails.py
+
+# Copilot agent memory
+.agent/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+*.swp
+*.swo
